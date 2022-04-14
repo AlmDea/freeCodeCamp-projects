@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 70px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 40px 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  header,
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  display: flex;
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
+.logo > img {
+  width: 50%;
+  height: 50%;
+  max-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+  margin-left: -100px;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  nav > li {
+    margin-left: 20px;
+  }
+}
+
+nav > ul {
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+a:focus,
+a:hover {
+  color: #8b008b;
+}
+
+#shelter-pet-project {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 40px;
+}
+
+@media (max-width: 650px) {
+  #info {
+    margin-top: 120px;
+  }
+}
+
+p {
+  padding: 20px;
+  margin-left: -20px;
+  width: 400px;
+}
+
+.btn {
+  display: block;
+  border: 0.5px inset grey;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  background-color: white;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  background-color: #8b008b;
+}
+
+.btn:hover {
+  background-color: #800080;
+}
+
+#email {
+  width: 90%;
+  height: 35px;
+  margin: 25px 0;
+  border: 0.5px inset grey;
+  border-radius: 3px;
+  background-color: white;
+  padding: 10px;
+}
+
+.img-adopt {
+  margin-left: 20px;
+}
+
+#down-part > h2 {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  align-items: center;
+  display: box;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.down-text {
+  display: flex;
+  flex-direction: row;
+  width: calc(90% / 3);
+  height: 100%;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.item-img {
+  width: 10rem;
+  height: 7rem;
+}
+
+.item1,
+.item2,
+.item3 {
+  padding: 10px;
+}
+
+.item1 {
+  margin-left: 140px;
+  margin-top: -14px;
+}
