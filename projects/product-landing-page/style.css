@@ -57,6 +57,7 @@ header {
     width: 100%;
     position: relative;
   }
+
   nav {
     flex-wrap: wrap;
   }
@@ -208,9 +209,7 @@ p {
   height: 7rem;
 }
 
-.item1,
-.item2,
-.item3 {
+.item {
   padding: 10px;
 }
 
