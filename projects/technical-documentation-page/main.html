@@ -1,129 +1,144 @@
-<link rel="stylesheet" href="./style.css" />
-<nav id="navbar1">
-  <header>JAVASCRIPT.RU</header>
-  <ul>
-    <li><a class="nav-link" href="#textbook">Учебник</a></li>
-    <li>
-      <a class="nav-link" href="#courses">Курсы</a>
-    </li>
-    <li>
-      <a class="nav-link" href="#forum">Форум</a>
-    </li>
-    <li><a class="nav-link" href="#tests">Тесты знаний</a></li>
-    <li><a class="nav-link" href="#screencasts">Скринкасты</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav id="navbar1">
+      <header>JAVASCRIPT.RU</header>
+      <ul>
+        <li><a class="nav-link" href="#textbook">Учебник</a></li>
+        <li>
+          <a class="nav-link" href="#courses">Курсы</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#forum">Форум</a>
+        </li>
+        <li><a class="nav-link" href="#tests">Тесты знаний</a></li>
+        <li><a class="nav-link" href="#screencasts">Скринкасты</a></li>
+      </ul>
+    </nav>
 
-<nav id="navbar2">
-  <h3>Раздел</h3>
-  <div class="aside">
-    <ul>
-      <li>
-        <a class="link" href="#functions">Продвинутая работа с функциями</a>
-      </li>
-      <li>
-        <a class="link" href="#forEach">Перебор forEach</a>
-      </li>
-      <li>
-        <a class="link" href="#search-in-arr">Поиск в массиве</a>
-      </li>
-      <li>
-        <a class="link" href="#array-transform">Преобразование массива</a>
-      </li>
-      <li><a class="link" href="#isArray">Array.isArray</a></li>
-      <li>
-        <a class="link" href="#thisArg"
-          >Большинство методов поддерживают «thisArg»</a
-        >
-      </li>
-      <li><a class="link" href="#sum">Итого</a></li>
-    </ul>
-  </div>
-</nav>
+    <nav id="navbar2">
+      <h3>Раздел</h3>
+      <div class="aside">
+        <ul>
+          <li>
+            <a class="link" href="#functions">Продвинутая работа с функциями</a>
+          </li>
+          <li>
+            <a class="link" href="#forEach">Перебор forEach</a>
+          </li>
+          <li>
+            <a class="link" href="#search-in-arr">Поиск в массиве</a>
+          </li>
+          <li>
+            <a class="link" href="#array-transform">Преобразование массива</a>
+          </li>
+          <li><a class="link" href="#isArray">Array.isArray</a></li>
+          <li>
+            <a class="link" href="#thisArg"
+              >Большинство методов поддерживают «thisArg»</a
+            >
+          </li>
+          <li><a class="link" href="#sum">Итого</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<main id="main-doc">
-  <section class="main-section" id="methods-arr">
-    <header>Методы массивов</header>
-    <article>
-      <p>
-        Массивы предоставляют множество методов. Чтобы было проще, в этой главе
-        они разбиты на группы.
-      </p>
+    <main id="main-doc">
+      <section class="main-section" id="methods-arr">
+        <header>Методы массивов</header>
+        <article>
+          <p>
+            Массивы предоставляют множество методов. Чтобы было проще, в этой
+            главе они разбиты на группы.
+          </p>
 
-      <h3>Добавление/удаление элементов</h3>
-      <p>
-        Мы уже знаем методы, которые добавляют и удаляют элементы из начала или
-        конца:
-        <code
-          >arr.push(...items) – добавляет элементы в конец, arr.pop() –
-          извлекает элемент из конца, arr.shift() – извлекает элемент из начала,
-          arr.unshift(...items) – добавляет элементы в начало.</code
-        >Есть и другие.
-      </p>
-    </article>
+          <h3>Добавление/удаление элементов</h3>
+          <p>
+            Мы уже знаем методы, которые добавляют и удаляют элементы из начала
+            или конца:
+            <code
+              >arr.push(...items) – добавляет элементы в конец, arr.pop() –
+              извлекает элемент из конца, arr.shift() – извлекает элемент из
+              начала, arr.unshift(...items) – добавляет элементы в начало.</code
+            >Есть и другие.
+          </p>
+        </article>
 
-    <section class="main-section" id="how-to-delete">
-      <h3>splice</h3>
-      <article>
-        <p>
-          Как удалить элемент из массива? Так как массивы – это объекты, то
-          можно попробовать <b>delete</b>:
-          <code
-            >let arr = ["I", "go", "home"]; delete arr[1]; // удалить "go"
-            alert( arr[1] ); // undefined // теперь arr = ["I", , "home"];
-            alert( arr.length ); // 3
-          </code>
+        <section class="main-section" id="how-to-delete">
+          <h3>splice</h3>
+          <article>
+            <p>
+              Как удалить элемент из массива? Так как массивы – это объекты, то
+              можно попробовать <b>delete</b>:
+              <code
+                >let arr = ["I", "go", "home"]; delete arr[1]; // удалить "go"
+                alert( arr[1] ); // undefined // теперь arr = ["I", , "home"];
+                alert( arr.length ); // 3
+              </code>
 
-          Вроде бы, элемент и был удалён, но при проверке оказывается, что
-          массив всё ещё имеет 3 элемента <b>arr.length == 3</b>.
+              Вроде бы, элемент и был удалён, но при проверке оказывается, что
+              массив всё ещё имеет 3 элемента <b>arr.length == 3</b>.
 
-          <br />
-          Это нормально, потому что всё, что делает <b>delete obj.key</b> – это
-          удаляет значение с данным ключом key. Это нормально для объектов, но
-          для массивов мы обычно хотим, чтобы оставшиеся элементы сдвинулись и
-          заняли освободившееся место. Мы ждём, что массив станет короче.
+              <br />
+              Это нормально, потому что всё, что делает <b>delete obj.key</b> –
+              это удаляет значение с данным ключом key. Это нормально для
+              объектов, но для массивов мы обычно хотим, чтобы оставшиеся
+              элементы сдвинулись и заняли освободившееся место. Мы ждём, что
+              массив станет короче.
 
-          <br />Поэтому для этого нужно использовать специальные методы.
+              <br />Поэтому для этого нужно использовать специальные методы.
 
-          <br />Метод arr.splice(str) – это универсальный «швейцарский нож» для
-          работы с массивами. Умеет всё: добавлять, удалять и заменять элементы.
-          Его синтаксис:
-          <code>arr.splice(index[, deleteCount, elem1, ..., elemN])</code>
-          Он начинает с позиции <b>index</b>, удаляет
-          <b>deleteCount</b> элементов и вставляет <b>elem1, ..., elemN</b> на
-          их место. Возвращает массив из удалённых элементов.<br />
+              <br />Метод arr.splice(str) – это универсальный «швейцарский нож»
+              для работы с массивами. Умеет всё: добавлять, удалять и заменять
+              элементы. Его синтаксис:
+              <code>arr.splice(index[, deleteCount, elem1, ..., elemN])</code>
+              Он начинает с позиции <b>index</b>, удаляет
+              <b>deleteCount</b> элементов и вставляет
+              <b>elem1, ..., elemN</b> на их место. Возвращает массив из
+              удалённых элементов.<br />
 
-          Этот метод проще всего понять, рассмотрев примеры. Начнём с удаления:
-          <code>
-            let arr = ["Я", "изучаю", "JavaScript"]; arr.splice(1, 1); //
-            начиная с позиции 1, удалить 1 элемент alert( arr ); // осталось
-            ["Я", "JavaScript"]</code
-          >
-        </p>
-        <p>
-          Легко, правда? Начиная с позиции 1, он убрал 1 элемент. В следующем
-          примере мы удалим 3 элемента и заменим их двумя другими.
-        </p>
-        <code
-          >let arr = ["Я", "изучаю", "JavaScript", "прямо", "сейчас"]; //
-          удалить 3 первых элемента и заменить их другими arr.splice(0, 3,
-          "Давай", "танцевать"); alert( arr ) // теперь ["Давай", "танцевать",
-          "прямо", "сейчас"]</code
-        >
-        <p>
-          Здесь видно, что <b>splice</b> возвращает массив из удалённых
-          элементов:
-        </p>
-        <code
-          >let arr = ["Я", "изучаю", "JavaScript", "прямо", "сейчас"]; //
-          удалить 2 первых элемента let removed = arr.splice(0, 2); alert(
-          removed ); // "Я", "изучаю" <-- массив из удалённых элементов</code
-        >
-        <p>
-          Метод <b>splice</b> также может вставлять элементы без удаления, для
-          этого достаточно установить <b>deleteCount</b> в 0:
-        </p>
-      </article>
-    </section>
-  </section>
-</main>
+              Этот метод проще всего понять, рассмотрев примеры. Начнём с
+              удаления:
+              <code>
+                let arr = ["Я", "изучаю", "JavaScript"]; arr.splice(1, 1); //
+                начиная с позиции 1, удалить 1 элемент alert( arr ); // осталось
+                ["Я", "JavaScript"]</code
+              >
+            </p>
+            <p>
+              Легко, правда? Начиная с позиции 1, он убрал 1 элемент. В
+              следующем примере мы удалим 3 элемента и заменим их двумя другими.
+            </p>
+            <code
+              >let arr = ["Я", "изучаю", "JavaScript", "прямо", "сейчас"]; //
+              удалить 3 первых элемента и заменить их другими arr.splice(0, 3,
+              "Давай", "танцевать"); alert( arr ) // теперь ["Давай",
+              "танцевать", "прямо", "сейчас"]</code
+            >
+            <p>
+              Здесь видно, что <b>splice</b> возвращает массив из удалённых
+              элементов:
+            </p>
+            <code
+              >let arr = ["Я", "изучаю", "JavaScript", "прямо", "сейчас"]; //
+              удалить 2 первых элемента let removed = arr.splice(0, 2); alert(
+              removed ); // "Я", "изучаю" <-- массив из удалённых
+              элементов</code
+            >
+            <p>
+              Метод <b>splice</b> также может вставлять элементы без удаления,
+              для этого достаточно установить <b>deleteCount</b> в 0:
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
