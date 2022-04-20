@@ -91,17 +91,11 @@ textarea {
 
 form {
   background: rgba(24, 17, 40, 0.8);
-  padding: 2.5rem 0.6rem;
-}
-
-@media (min-width: 480px) {
-  form {
-    padding: 2.5rem;
-  }
+  padding: 2.5rem 0.8rem;
 }
 
 .form-group {
-  margin: 0 auto 1.4rem auto;
+  margin: 0 auto 1rem auto;
   padding: 0.25rem;
 }
 
